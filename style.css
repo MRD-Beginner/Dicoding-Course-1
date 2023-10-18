@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Poppins:wght@600@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'poppins';
+}
+
+nav{
+    background-color: #21252a;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+  
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: 61px;
+    right: 150px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #21252a;
+  }
+  
+  .dropdown a:hover {
+    background-color: #ddd;
+    }
+  
+  .show {display: block;}
+
+
+.logo span{
+    color: white;
+}
+
+
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-1{
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 20px;
+    margin: 30px;
+    color: white;
+}
+
+.logo{
+    font-size: 40px;
+    font-family: 'poppins';
+    font-weight: 500;
+}
+
+.my-profile{
+    justify-content: space-around;
+    height: auto;
+    display: flex;
+    padding: 40px;
+}
+
+.my-profile article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-profile article .name{
+    font-family: 'poppins';
+    font-weight: 500;
+    font-size: 70px;
+    letter-spacing: 9px;
+}
+
+.my-profile article .desc{
+    font-family: 'poppins';
+    letter-spacing: 1px;
+}
+
+.my-profile img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 1000px;
+}
+
+.skill .title-skill{
+    font-size: 25px;
+    text-align: center;
+}
+
+.skill-desc{
+
+    margin: 10px 50px;
+    display: flex;
+    align-items: center;
+}
+
+.skill-desc img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 600px;
+}
+
+.skill-desc section{
+    margin: 100px;
+}
+
+.skill-desc section h3{
+    font-size: 30px;
+}
+
+.skill-desc section p{
+    font-size: 20px;
+}
+
+.edu{
+    margin-bottom: 30px;
+}
+
+.title-edu{
+    text-align: center;
+}
+
+.box{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.edu-box{
+    text-align: center;
+    display: inline-block;
+}
+
+.edu-box img{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contact{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-media i{
+    color: white;
+}
+
+footer{
+    /* width: 100vw; */
+    height: auto;
+    background-color: #21252a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+}
+
+footer h4{
+    margin-top: 10px;
+}
+
+@media (min-width:400px) and (max-width:800px){
+    nav{
+        width: auto;
+    }
+    .logo{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .menu-1{
+        display: none;
+    }
+    .my-profile{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .skill .skill-desc{
+        display: flex;
+        flex-direction: column ;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width:300px) and (max-width:500px){
+    .dropbtn{
+        display: inline-block;
+    }
+}
